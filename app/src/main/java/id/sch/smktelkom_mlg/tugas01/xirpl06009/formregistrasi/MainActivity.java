@@ -57,7 +57,12 @@ public class MainActivity extends AppCompatActivity {
     private void doProccess() {
 
         if (isValid()) {
-            Res.setText("Data Anda sudah terkirim");
+            Res.setText("Data Anda sudah terkirim \n" +
+                    "\n Username : " + eTuser +
+                    "\n Nama     : " + eTln +
+                    "\n Email    : " + eTemail +
+                    "\n Alamat   : " + eTaddress +
+                    "\n Asal Kota: " +);
         }
 
     }

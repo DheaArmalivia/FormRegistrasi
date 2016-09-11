@@ -31,6 +31,14 @@
             android:layout_gravity="center_horizontal"
             android:text="Kegiatan &quot;Break The Code&quot;" />
 
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="(Khusus daerah Jawa Timur)" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="188dp"
