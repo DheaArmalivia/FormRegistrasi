@@ -46,7 +46,7 @@
             android:text="Username" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextUname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -57,7 +57,7 @@
             android:text="Nama Lengkap" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextLname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -68,7 +68,7 @@
             android:text="Email" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -79,7 +79,7 @@
             android:text="Alamat" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editTextAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -90,7 +90,7 @@
             android:text="No Telepon" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/editTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -116,21 +116,21 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Beginner" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButtonM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Medium" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -144,60 +144,67 @@
             android:text="Materi yang Diambil" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxHTML"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="HTML" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/checkBoxCSS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="CSS" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/checkBoxJ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Java" />
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/checkBoxVB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Visual Basic" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/checkBoxC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="C (C++, C#)" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/checkBoxD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Delphi" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonSub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Submit" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonRes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Reset" />
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="hasil" />
 
     </LinearLayout>
 
