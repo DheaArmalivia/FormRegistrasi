@@ -8,7 +8,7 @@ no telepon, level, materi tidak dipilih atau tidak diinputkan.
 Tombol submit juga menampilkan output mengenai waktu yang digunakan untuk kegiatan
 diperoleh dari 1 materi pada pilihan checkbox memiliki 2 minggu waktu pembelajaran.
 
-Nama : Dhea Armalivia Airizah "
+Nama : Dhea Armalivia Airizah 
 Kelas: XI RPL 6
 Absen: 09
 
