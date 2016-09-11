@@ -112,7 +112,8 @@
         <Spinner
             android:id="@+id/spinnerKota"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/kota" />
 
         <TextView
             android:id="@+id/textViewLevel"
@@ -201,13 +202,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Submit" />
-
-        <Button
-            android:id="@+id/buttonRes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Reset" />
 
         <TextView
             android:id="@+id/Result"

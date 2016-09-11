@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     EditText eTuser, eTln, eTemail, eTaddress, eTnumber;
-    Button bSub, bRes;
+    Button bSub;
     RadioButton rBB, rBM, rBE;
     RadioGroup rGLevel;
     TextView Res;
@@ -41,67 +41,32 @@ public class MainActivity extends AppCompatActivity {
         spCity = (Spinner) findViewById(R.id.spinnerKota);
 
         bSub = (Button) findViewById(R.id.buttonSub);
-        bRes = (Button) findViewById(R.id.buttonRes);
 
         Res = (TextView) findViewById(R.id.Result);
 
         bSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                doProccess();
+
+                String uname = eTuser.getText().toString();
+                String ln = eTln.getText().toString();
+                String email = eTemail.getText().toString();
+                String address = eTaddress.getText().toString();
+                int number = Integer.parseInt(eTnumber.getText().toString());
+                String kota = spCity.getSelectedItem().toString();
+
+                Res.setText("\nUsername    : " + uname +
+                        "\nNama Lengkap: " + ln +
+                        "\nEmail       : " + email +
+                        "\nAlamat      : " + address +
+                        "\nNo Telepon  : " + number +
+                        "\nAsal Kota   : " + kota);
+
+                //  doProccess();
             }
         });
 
     }
 
-    private void doProccess() {
-
-        if (isValid()) {
-            Res.setText("Data Anda sudah terkirim \n" +
-                    "\n Username : " + eTuser +
-                    "\n Nama     : " + eTln +
-                    "\n Email    : " + eTemail +
-                    "\n Alamat   : " + eTaddress +
-                    "\n Asal Kota: " +);
-        }
-
-    }
-
-    private boolean isValid() {
-
-        boolean valid = true;
-
-        String uN = eTuser.getText().toString();
-        String lN = eTln.getText().toString();
-        String el = eTemail.getText().toString();
-        String ad = eTaddress.getText().toString();
-        String nt = eTnumber.getText().toString();
-        String hasil = null;
-
-        if (uN.isEmpty()) {
-            eTuser.setError("Username belum diisi");
-            valid = false;
-        } else if (lN.isEmpty()) {
-            eTln.setError("Nama Lengkap belum diisi");
-            valid = false;
-        } else if (el.isEmpty()) {
-            eTemail.setError("Email belum diisi");
-            valid = false;
-        } else if (ad.isEmpty()) {
-            eTaddress.setError("Alamat masih kosong");
-            valid = false;
-        } else if (nt.isEmpty()) {
-            eTnumber.setError("Nomor Telepon belum diisi");
-        } else {
-            eTuser.setError(null);
-            eTln.setError(null);
-            eTaddress.setError(null);
-            eTnumber.setError(null);
-            eTemail.setError(null);
-        }
-
-        return valid;
-
-    }
-
 }
+
